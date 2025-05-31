@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top, #a8e6cf, #dcedc1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+  padding: 12px;
+  margin: 10px 5px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+#getWeatherBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#getWeatherBtn:hover {
+  background-color: #388e3c;
+}
+
+/* Güneş Efekti */
+.sun {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ffeb3b, #fdd835);
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(255, 235, 59, 0.5);
+  animation: rotateSun 20s linear infinite;
+}
+
+@keyframes rotateSun {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
